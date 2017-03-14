@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Venol 2015 | "EXCELLENT OLYMPIAD, EXCELLENT VETERINARY ! VENOL BE GLORY"</title>
+<meta charset="utf-8">
+<link href="images/logo.png" rel="shortcut icon">
+<link href="images/logo.png" rel="bookmark icon">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="grey">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.min-latest.js"></script>
+<script src="js/jquery.nivo.slider.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/custom.js"></script>
+<script>
+$(function () {
+    setInterval("rotateDiv()", 10000);
+});
+function rotateDiv() {
+    var currentDiv = $("#simpleslider div.current");
+    var nextDiv = currentDiv.next();
+    if (nextDiv.length == 0) nextDiv = $("#simpleslider div:first");
+    currentDiv.removeClass('current')
+        .addClass('previous')
+        .fadeOut('2000');
+    nextDiv.fadeIn('3000')
+        .addClass('current', function () {
+        currentDiv.fadeOut('2000', function () {
+            currentDiv.removeClass('previous');
+        });
+    });
+}
+</script>
+<script charset="utf-8">
+$(document)
+    .ready(function () {
+    $("a[rel^='prettyPhoto']")
+        .prettyPhoto();
+});
+</script>
+</head>
+<body>
+<!-- Untuk Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+          <h2 class="modal-title">Pengumuman</h2>
+        </div>
+        <div class="modal-body">
+        <li><p>Peserta yang lolos ke babak selanjutnya bisa dilihat <a href="download/pengumuman peserta.pdf">di sini</a>.</p></li>
+        <li><p>Rundown peserta dan keperluan selanjutnya bisa di cek <a href="download/rundown peserta venol 2015.pdf">di file berikut</a>.</p></li>
+        <li><p>Silabus untuk babak semi final - grand final silahkan download <a href="download/SILABUS VENOL 2k15.pdf">di sini</a>.</p></li>
+        <li><p>Daftar penginapan untuk peserta yang lolos bisa didownload <a href="download/penginapan.docx">di sini</a>.</p></li>
+        </div>
+      </div>
+    </div>
+  <!-- End of Modal -->
+  </div>
+    <script src="js/bootstrap.min.js"></script>
+  <script>
+    $( document ).ready(function() {
+      $('#myModal').modal();
+    });
+  </script>
+  <!-- End of JS modal -->
+<div id="header" style="height: 95px">
+  <!-- Start navigation area -->
+  <div id="navigation">
+    <div id="navigation_wrap">
+      <!-- Start contact info area -->
+      <div id="conteactinfo"><img src="images/logo.png" alt="" width="11px" height="11px"><strong>  VENOL 2015</strong></div>
+      <!-- End contact info area -->
+      <!-- Start navigation -->
+      <div id="navi">
+        <ul>
+          <li><a href="http://www.ujian.venolfkhua.com">Login</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="registration.html">Registration</a>
+          </li>
+          <li><a href="gallery.html">Gallery</a>
+          </li>
+          <li><a href="region.html">Region</a>
+          </li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- End navigation -->
+    </div>
+  </div>
+  <!-- End navigation area -->
+  <div class="clear"></div>
+  
+  </div>
+  <!-- End Social & Logo area -->
+</div>
+<div id="main">
+  <!-- Start Slider Wrapping -->
+  <div id="sliderwrap">
+    <!-- Start Slider -->
+    <div id="slider" class="nivoSlider"> <img src="images/slider-banners/slider01.jpg" alt=""> <img src="images/slider-banners/slider02.jpg" alt=""> <img src="images/slider-banners/slider03.jpg" alt=""> </div>
+    <!-- End Slider -->
+    <!-- Start Slider HTML Captions -->
+    <div id="htmlcaption" class="nivo-html-caption"> <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. </div>
+    <!-- End Slider HTML Captions -->
+  </div>
+  <!-- End Slider Wrapping -->
+  <!-- Start H1 Title -->
+  <div class="titles">
+    <h1>Calendar</h1>
+    <span></span> </div>
+  <!-- End H1 Title -->
+  <!-- Start Main Body Wrap -->
+  <div id="main-wrap">
+    <!-- Start Featured Boxes -->
+    <div class="boxes-third boxes-first">
+      <div class="boxes-padding">
+        <div class="bti">
+          <div class="featured-images"><img src="images/calendar-icon.png" width="53" height="53" alt=""></div>
+          <div class="featured-titles">Selekwil</div>
+        </div>
+        <div class="featured-text">Seleksi wilayah (Online) akan dilaksanakan secara serentak pada 3-4 Oktober 2015.</div>
+      </div>
+      <span class="box-arrow"></span> </div>
+    <div class="boxes-third">
+      <div class="boxes-padding">
+        <div class="bti">
+          <div class="featured-images"><img src="images/calendar-icon.png" width="53" height="53" alt=""></div>
+          <div class="featured-titles">Semifinal</div>
+        </div>
+        <div class="featured-text">Semifinal akan dilaksanakan di Fakultas Kedokteran Hewan pada 10 Oktober 2015.</div>
+      </div>
+      <span class="box-arrow"></span> </div>
+    <div class="boxes-third boxes-last">
+      <div class="boxes-padding">
+        <div class="bti">
+          <div class="featured-images"><img src="images/calendar-icon.png" width="53" height="53" alt=""></div>
+          <div class="featured-titles">Final</div>
+        </div>
+        <div class="featured-text">Final akan dilaksanakan di Fakultas Kedokteran Hewan pada 11 Oktober 2015.</div>
+      </div>
+      <span class="box-arrow"></span> </div>
+    <!-- End Featured Boxes -->
+    <!-- Start Latest Project titles -->
+    <div class="boxes-full">
+      <div class="boxes-padding fullpadding">
+        <h1>Documentation</h1>
+      </div>
+      <span class="box-arrow"></span> </div>
+    <!-- End Latest Project titles -->
+    <!-- Start Latest 3 Projects -->
+    <div class="boxes-third boxes-first">
+      <div class="latestthree">
+        <div class="title"> Dokumentasi Venol 2014 <span class="titlearrow"></span> </div>
+        <div class="latestthreeimage"><a href="images/latest-projects/d1.jpg" rel="prettyPhoto"><img src="images/latest-projects/d1.jpg" alt="" width="305" height="175" border="0"></a></div>
+        <div class="text"><span class="textarrow"></span> </div>
+      </div>
+    </div>
+    <div class="boxes-third">
+      <div class="latestthree">
+        <div class="title"> Dokumentasi Venol 2014 <span class="titlearrow"></span> </div>
+        <div class="latestthreeimage"><a href="images/latest-projects/d2.jpg" rel="prettyPhoto"><img src="images/latest-projects/d2.jpg" alt="" width="305" height="175" border="0"></a></div>
+        <div class="text"><span class="textarrow"></span> </div>
+      </div>
+    </div>
+    <div class="boxes-third boxes-last">
+      <div class="latestthree">
+        <div class="title"> Dokumentasi Venol 2014 <span class="titlearrow"></span> </div>
+        <div class="latestthreeimage"><a href="images/latest-projects/d3.jpg" rel="prettyPhoto"><img src="images/latest-projects/d3.jpg" alt="" width="305" height="175" border="0"></a></div>
+        <div class="text"><span class="textarrow"></span> </div>
+      </div>
+    </div>
+    <!-- End Latest 3 Projects -->
+  </div>
+  <!-- End Main Body Wrap -->
+</div>
+<!-- Start Footer -->
+<div id="footer">
+  <!-- Start Footer Top -->
+  <div id="footertop">
+    <div class="footerwrap">
+    <!-- Start Useful Links -->
+      <div id="useful_links">
+        <div id="usefultitle">Present by</div>
+        <div id="usefulbody">
+        <br><img src="images/logo.png" alt="" width="100px" height="100px">
+        </div>
+      </div>
+      <!-- End Useful Links -->
+      <!-- Start Testimonials -->
+      <div class="split23" style="width: 71%;">
+        <div id="testimonialtitle" style="padding-bottom : 2%; ">About</div>
+        <div id="usefulbody">
+        <br>
+          <p align="justify">Veterinary Olympiad atau Venol 2015 adalah sebuah olimpiade yang diadakan oleh BEM Fakultas Kedokteran Hewan Universitas Airlangga Surabaya untuk Siswa tingkat SMA sederajat di Tanah Air yang berpotensi dengan mengasah kemampuan MIPA, bahasa Inggris dan Ilmu kedokteran hewan dasar.
+          <span></p>
+          <p align="justify">Seleksi daerah online diadakan serentak di seluruh Indonesia. Sebanyak 50 tim akan masuk semi final dan kemudian disaring kembali menjadi 15 tim. Dalam olimpiade ini, akan banyak sekali pengalaman yang akan didapatkan. Serta banyak kejutan lain deh! Dijamin seru! Jadilah bagian dari VENOL 2015! Jadilah juara dan raih hadiahnya. Hadiah utama berupa Piala Rektor Universitas Airlangga, dana pendidikan senilai Rp. 5.000.000,- dan masih ada lagi yang lainnya!. 
+          <span></p>
+          <p align="justify">Come join us,EXCELLENT OLYMPIAD,EXCELLENT VETERINARY ! VENOL BE GLORY! Coming Soon! Held on oktober 2015!<span></p>
+        </div>
+      </div>
+      <!-- End Latest Testimonials -->
+    </div>
+  </div>
+  <!-- End Footer Top -->
+  <div class="clear"></div>
+  <!-- Start Footer Bottom -->
+  <div id="footerbottom">
+    <div class="footerwrap">
+      <!-- Start Copyright Div -->
+      <div id="copyright">&copy;2015.Venol - Theme by Cyber 2015</div>
+      <!-- PLEASE SUPPORT US BY LEAVING THIS LINK -->
+      <!-- End Copyright Div -->
+      <!-- Start Social area -->
+      <div class="socialfooter">
+        <ul>
+          <li><a href="https://www.facebook.com/veterinary.olympiad" class="social-facebook"></a></li>
+          <li><a href="https://twitter.com/venol2015_ua" class="social-twitter"></a></li>
+        </ul>
+      </div>
+      <!-- End Socialarea -->
+    </div>
+  </div>
+  <!-- End Footer Bottom -->
+</div>
+<!-- End Footer -->
+<!-- Start Scroll To Top Div -->
+<div id="scrolltab"></div>
+<!-- End Scroll To Top Div -->
+</html>

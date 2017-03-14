@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Response | Gallery</title>
+<meta charset="utf-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="grey">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+<link href="images/logo.png" rel="shortcut icon">
+<link href="images/logo.png" rel="bookmark icon">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.min-latest.js"></script>
+<script src="js/jquery.nivo.slider.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/custom.js"></script>
+<script>
+$(document)
+    .ready(function () {
+    var $container = $('#portfolio-container')
+    // initialize Isotope
+    $container.isotope({
+        // options...
+        resizable: false, // disable normal resizing
+        layoutMode: 'fitRows',
+        itemSelector: '.element2',
+        animationEngine: 'best-available',
+        // set columnWidth to a percentage of container width
+        masonry: {
+            columnWidth: $container.width() / 5
+        }
+    });
+    // update columnWidth on window resize
+    $(window)
+        .smartresize(function () {
+        $container.isotope({
+            // update columnWidth to a percentage of container width
+            masonry: {
+                columnWidth: $container.width() / 5
+            }
+        });
+    });
+    $container.imagesLoaded(function () {
+        $container.isotope({
+            // options...
+        });
+    });
+    $('#portfolio-filter a')
+        .click(function () {
+        var selector = $(this)
+            .attr('data-filter');
+        $container.isotope({
+            filter: selector
+        });
+        return false;
+    });
+});
+</script>
+<script charset="utf-8">
+$(document)
+    .ready(function () {
+    $("a[rel^='prettyPhoto']")
+        .prettyPhoto();
+});
+</script>
+</head>
+<body>
+<div id="header" style="height: 70px">
+  <!-- Start navigation area -->
+  <div id="navigation">
+    <div id="navigation_wrap">
+      <!-- Start contact info area -->
+      <div id="conteactinfo"><img src="images/logo.png" alt="" width="11px" height="11px"><strong>  VENOL 2015</strong></div>
+      <!-- End contact info area -->
+      <!-- Start navigation -->
+      <div id="navi">
+        <ul>
+          <li><a href="http://www.ujian.venolfkhua.com">Login</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="registration.html">Registration</a>
+          </li>
+          <li><a href="gallery.html">Gallery</a>
+          </li>
+          <li><a href="region.html">Region</a>
+          </li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- End navigation -->
+    </div>
+  </div>
+  <!-- End navigation area -->
+  <div class="clear"></div>
+  
+  </div>
+  <!-- End Social & Logo area -->
+</div>
+<div id="main">
+  <!-- Start H1 Title -->
+  <div class="titlesnormal">
+    <h1>Gallery</h1>
+    <span></span> </div>
+  <!-- End H1 Title -->
+  <!-- Start Main Body Wrap -->
+  <div id="main-wrap">
+    
+    <!-- Start Box -->
+    <div class="boxes-full">
+      <div class="boxes-padding fullpadding">
+        <!-- Start None Split Section -->
+        <div class="splitnone">
+          <div id="portfolio-container">
+            <!-- Start 4 column portfolio -->
+            <div class="element2 web">
+              <div class="portfoliowrap">
+                <div class="title">Dokumentasi Venol 2014<span class="titlearrow"></span></div>
+                <div class="portfolioimage"><a href="images/latest-projects/d1.jpg" rel="prettyPhoto"><img src="images/latest-projects/d1.jpg" alt=""></a></div>
+                <div class="text"><span class="textarrow"></span></div>
+              </div>
+            </div>
+            <div class="element2 graphic">
+              <div class="portfoliowrap">
+                <div class="title">Dokumentasi Venol 2014<span class="titlearrow"></span></div>
+                <div class="portfolioimage"><a href="images/latest-projects/d2.jpg" rel="prettyPhoto"><img src="images/latest-projects/d2.jpg" alt=""></a></div>
+                <div class="text"><span class="textarrow"></span></div>
+              </div>
+            </div>
+            <div class="element2 logo">
+              <div class="portfoliowrap">
+                <div class="title">Dokumentasi Venol 2014<span class="titlearrow"></span></div>
+                <div class="portfolioimage"><a href="images/latest-projects/d3.jpg" rel="prettyPhoto"><img src="images/latest-projects/d3.jpg" alt=""></a></div>
+                <div class="text"><span class="textarrow"></span></div>
+              </div>
+            </div>
+            <div class="element2 print">
+              <div class="portfoliowrap">
+                <div class="title">Dokumentasi Venol 2014<span class="titlearrow"></span></div>
+                <div class="portfolioimage"><a href="images/latest-projects/d4.jpg" rel="prettyPhoto"><img src="images/latest-projects/d4.jpg" alt=""></a></div>
+                <div class="text"><span class="textarrow"></span></div>
+              </div>
+            </div>
+            <div class="element2 web">
+              <div class="portfoliowrap">
+                <div class="title">Dokumentasi Venol 2014<span class="titlearrow"></span></div>
+                <div class="portfolioimage"><a href="images/latest-projects/d5.jpg" rel="prettyPhoto"><img src="images/latest-projects/d5.jpg" alt=""></a></div>
+                <div class="text"><span class="textarrow"></span></div>
+              </div>
+            </div>
+            <div class="element2 web">
+              <div class="portfoliowrap">
+                <div class="title">Dokumentasi Venol 2014<span class="titlearrow"></span></div>
+                <div class="portfolioimage"><a href="images/latest-projects/d6.jpg" rel="prettyPhoto"><img src="images/latest-projects/d6.jpg" alt=""></a></div>
+                <div class="text"><span class="textarrow"></span></div>
+              </div>
+            </div>
+            <div class="element2 graphic web">
+              <div class="portfoliowrap">
+                <div class="title">Dokumentasi Venol 2014<span class="titlearrow"></span></div>
+                <div class="portfolioimage"><a href="images/latest-projects/d7.jpg" rel="prettyPhoto"><img src="images/latest-projects/d7.jpg" alt=""></a></div>
+                <div class="text"><span class="textarrow"></span></div>
+              </div>
+            </div>
+            <div class="element2 Web">
+              <div class="portfoliowrap">
+                <div class="title">Dokumentasi Venol 2014<span class="titlearrow"></span></div>
+                <div class="portfolioimage"><a href="images/latest-projects/d8.jpg" rel="prettyPhoto"><img src="images/latest-projects/d8.jpg" alt=""></a></div>
+                <div class="text"><span class="textarrow"></span></div>
+              </div>
+            </div>
+            <div class="element2 web">
+              <div class="portfoliowrap">
+                <div class="title">Dokumentasi Venol 2014<span class="titlearrow"></span></div>
+                <div class="portfolioimage"><a href="images/latest-projects/d9.jpg" rel="prettyPhoto"><img src="images/latest-projects/d9.jpg" alt=""></a></div>
+                <div class="text"><span class="textarrow"></span></div>
+              </div>
+            </div>
+            <div class="element2 web">
+              <div class="portfoliowrap">
+                <div class="title">Dokumentasi Venol 2014<span class="titlearrow"></span></div>
+                <div class="portfolioimage"><a href="images/latest-projects/d10.jpg" rel="prettyPhoto"><img src="images/latest-projects/d10.jpg" alt=""></a></div>
+                <div class="text"><span class="textarrow"></span></div>
+              </div>
+            </div>
+            <div class="element2 graphic web">
+              <div class="portfoliowrap">
+                <div class="title">Dokumentasi Venol 2014<span class="titlearrow"></span></div>
+                <div class="portfolioimage"><a href="images/latest-projects/d11.jpg" rel="prettyPhoto"><img src="images/latest-projects/d11.jpg" alt=""></a></div>
+                <div class="text"><span class="textarrow"></span></div>
+              </div>
+            </div>
+            <div class="element2 Web">
+              <div class="portfoliowrap">
+                <div class="title">Dokumentasi Venol 2014<span class="titlearrow"></span></div>
+                <div class="portfolioimage"><a href="images/latest-projects/d12.jpg" rel="prettyPhoto"><img src="images/latest-projects/d12.jpg" alt=""></a></div>
+                <div class="text"><span class="textarrow"></span></div>
+              </div>
+            </div>
+            <!-- End 4 column portfolio -->
+          </div>
+        </div>
+        <!-- End None Split Section -->
+      </div>
+      <span class="box-arrow"></span> </div>
+    <!-- End Box -->
+  </div>
+  <!-- End Main Body Wrap -->
+</div>
+<!-- Start Footer -->
+<div id="footer">
+  <!-- Start Footer Top -->
+  <div id="footertop">
+    <div class="footerwrap">
+    <!-- Start Useful Links -->
+      <div id="useful_links">
+        <div id="usefultitle">Present by</div>
+        <div id="usefulbody">
+          <p><img src="images/logo.png" alt="" width="100px" height="100px"></p>
+        </div>
+      </div>
+      <!-- End Useful Links -->
+      <!-- Start Testimonials -->
+      <div class="split23">
+        <div id="testimonialtitle">About</div>
+        <div id="usefulbody">
+          <p align="justify">Veterinary Olympiad atau Venol 2015 adalah sebuah olimpiade yang diadakan oleh BEM Fakultas Kedokteran Hewan Universitas Airlangga Surabaya untuk Siswa tingkat SMA sederajat di Tanah Air yang berpotensi dengan mengasah kemampuan MIPA, bahasa Inggris dan Ilmu kedokteran hewan dasar.
+          <span></p>
+          <p align="justify">Seleksi daerah online diadakan serentak di seluruh Indonesia. Sebanyak 50 tim akan masuk semi final dan kemudian disaring kembali menjadi 15 tim. Dalam olimpiade ini, akan banyak sekali pengalaman yang akan didapatkan. Serta banyak kejutan lain deh! Dijamin seru! Jadilah bagian dari VENOL 2015! Jadilah juara dan raih hadiahnya. Hadiah utama berupa Piala Rektor Universitas Airlangga, dana pendidikan senilai Rp. 5.000.000,- dan masih ada lagi yang lainnya!. 
+          <span></p>
+          <p align="justify">Come join us,EXCELLENT OLYMPIAD,EXCELLENT VETERINARY ! VENOL BE GLORY! Coming Soon! Held on oktober 2015!<span></p>
+        </div>
+      </div>
+      <!-- End Latest Testimonials -->
+    </div>
+  </div>
+  <!-- End Footer Top -->
+  <div class="clear"></div>
+  <!-- Start Footer Bottom -->
+  <div id="footerbottom">
+    <div class="footerwrap">
+      <!-- Start Copyright Div -->
+      <div id="copyright">&copy;2015.Venol - Theme by Cyber 2015</div>
+      <!-- PLEASE SUPPORT US BY LEAVING THIS LINK -->
+      <!-- End Copyright Div -->
+      <!-- Start Social area -->
+      <div class="socialfooter">
+        <ul>
+          <li><a href="https://www.facebook.com/veterinary.olympiad" class="social-facebook"></a></li>
+          <li><a href="https://twitter.com/venol2015_ua" class="social-twitter"></a></li>
+        </ul>
+      </div>
+      <!-- End Socialarea -->
+    </div>
+  </div>
+  <!-- End Footer Bottom -->
+</div>
+<!-- End Footer -->
+<!-- Start Scroll To Top Div -->
+<div id="scrolltab"></div>
+<!-- End Scroll To Top Div -->
+</html>

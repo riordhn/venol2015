@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Response | Regional</title>
+<meta charset="utf-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="grey">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+<link href="images/logo.png" rel="shortcut icon">
+<link href="images/logo.png" rel="bookmark icon">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.min-latest.js"></script>
+<script src="js/jquery.nivo.slider.js"></script>
+<script src="js/custom.js"></script>
+<script>
+$(function () {
+    setInterval("rotateDiv()", 10000);
+});
+function rotateDiv() {
+    var currentDiv = $("#simpleslider div.current");
+    var nextDiv = currentDiv.next();
+    if (nextDiv.length == 0) nextDiv = $("#simpleslider div:first");
+    currentDiv.removeClass('current')
+        .addClass('previous')
+        .fadeOut('2000');
+    nextDiv.fadeIn('3000')
+        .addClass('current', function () {
+        currentDiv.fadeOut('2000', function () {
+            currentDiv.removeClass('previous');
+        });
+    });
+}
+</script>
+</head>
+<body>
+<div id="header" style="height: 70px">
+  <!-- Start navigation area -->
+  <div id="navigation">
+    <div id="navigation_wrap">
+      <!-- Start contact info area -->
+      <div id="conteactinfo"><img src="images/logo.png" alt="" width="11px" height="11px"><strong>  VENOL 2015</strong></div>
+      <!-- End contact info area -->
+      <!-- Start navigation -->
+      <div id="navi">
+        <ul>
+          <li><a href="http://www.ujian.venolfkhua.com">Login</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="registration.html">Registration</a>
+          </li>
+          <li><a href="gallery.html">Gallery</a>
+          </li>
+          <li><a href="region.html">Region</a>
+          </li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- End navigation -->
+    </div>
+  </div>
+  <!-- End navigation area -->
+  <div class="clear"></div>
+  
+  </div>
+  <!-- End Social & Logo area -->
+</div>
+<div id="main">
+  <!-- Start H1 Title -->
+  <div class="titlesnormal">
+    <h1>Regional</h1>
+    <span></span> </div>
+  <!-- End H1 Title -->
+  <!-- Start Main Body Wrap -->
+  <div id="main-wrap">
+    <!-- Start Latest Project titles -->
+    <div class="boxes-full">
+      <div class="boxes-padding fullpadding">
+        <!-- Start None Split Section -->
+        <div class="splitnone">
+          <img src="images/peta.png" style="width : 100%; height : 100%" alt="">
+        </div>
+        <!-- End None Split Section -->
+        <div class="clear"></div>
+        <hr>
+        <!-- Start 3rd Split Section -->
+        <div class="split3">
+          <h3>Wilayah 1</h3>
+          <li class="tick"><strong>Region Surabaya</strong> : <br>Surabaya, Sidoarjo, dan Gresik</li>
+          <li class="tick"><strong>Region Madura</strong>   : <br>Sampan, Bangkalan, Pamekasan, dan Sumenep</li>
+          <li class="tick"><strong>Region Lamongan</strong> : <br>Lamongan, Bojonegoro, Tuban, dan Jombang</li>
+          <li class="tick"><strong>Region Malang</strong>   : <br>Malang, Pasuruan, Mojokerto, dan Batu</li>
+          <li class="tick"><strong>Region Jember</strong>   : <br>Banyuwangi, Jember, Bondowoso, Situbondo, Lumajang, dan Probolinggo</li>
+        </div>
+        <div class="split3">
+          <h3>Wilayah 2</h3>
+          <li class="tick"><strong>Region Madiun</strong>     : <br>Madiun, Magetan, Ngawi, Ponorogo, dan Pacitan<br>
+          <li class="tick"><strong>Region Blitar</strong>     : <br>Blitar, Kediri, Nganjuk, Tulungagung, dan Trenggalek<br>
+          <li class="tick"><strong>Region Semarang</strong>   : <br>Semarang, Kudus, Pati, Pekalongan, dan Tegal<br>
+          <li class="tick"><strong>Region Yogyakarta</strong> : <br>Yogyakarta, Solo, Sragen, dan Klaten<br>
+          <li class="tick"><strong>Region Jawa barat</strong> : <br>Bandung, Tasikmalaya, Garut, dan Cirebon<br><br><br>
+        </div>
+        <div class="split3">
+          <h3>Wilayah 3</h3>
+          <li class="tick"><strong>Region Jabodetabek</strong> : <br>Jakarta, Bogor, Depok, Tangerang, Bekasi<br>
+          <li class="tick"><strong>Region Sumatera</strong>    : <br>Lampung, Palembang, Riau, dan sekitarnya<br>
+          <li class="tick"><strong>Region Kalimantan</strong>  : <br>Samarinda, Banjarmasin, Balikpapan, dan sekitarnya<br>
+          <li class="tick"><strong>Region Bali</strong>        : <br>Denpasar, Matararam, Sumbawa, Bima<br>
+          <li class="tick"><strong>Region Sulawesi</strong>    : <br>Makasar, Palu, dan sekitarnya
+        </div>
+        <!-- End 3rd Split Section -->
+      </div>
+      <span class="box-arrow"> </span> </div>
+    <!-- End Latest Project titles -->
+  </div>
+  <!-- End Main Body Wrap -->
+</div>
+<!-- Start Footer -->
+<!-- Start Footer -->
+<div id="footer">
+  <!-- Start Footer Top -->
+  <div id="footertop">
+    <div class="footerwrap">
+    <!-- Start Useful Links -->
+      <div id="useful_links">
+        <div id="usefultitle">Present by</div>
+        <div id="usefulbody">
+          <p><img src="images/logo.png" alt="" width="100px" height="100px"></p>
+        </div>
+      </div>
+      <!-- End Useful Links -->
+      <!-- Start Testimonials -->
+      <div class="split23">
+        <div id="testimonialtitle">About</div>
+        <div id="usefulbody">
+          <p align="justify">Veterinary Olympiad atau Venol 2015 adalah sebuah olimpiade yang diadakan oleh BEM Fakultas Kedokteran Hewan Universitas Airlangga Surabaya untuk Siswa tingkat SMA sederajat di Tanah Air yang berpotensi dengan mengasah kemampuan MIPA, bahasa Inggris dan Ilmu kedokteran hewan dasar.
+          <span></p>
+          <p align="justify">Seleksi daerah online diadakan serentak di seluruh Indonesia. Sebanyak 50 tim akan masuk semi final dan kemudian disaring kembali menjadi 15 tim. Dalam olimpiade ini, akan banyak sekali pengalaman yang akan didapatkan. Serta banyak kejutan lain deh! Dijamin seru! Jadilah bagian dari VENOL 2015! Jadilah juara dan raih hadiahnya. Hadiah utama berupa Piala Rektor Universitas Airlangga, dana pendidikan senilai Rp. 5.000.000,- dan masih ada lagi yang lainnya!. 
+          <span></p>
+          <p align="justify">Come join us,EXCELLENT OLYMPIAD,EXCELLENT VETERINARY ! VENOL BE GLORY! Coming Soon! Held on oktober 2015!<span></p>
+        </div>
+      </div>
+      <!-- End Latest Testimonials -->
+    </div>
+  </div>
+  <!-- End Footer Top -->
+  <div class="clear"></div>
+  <!-- Start Footer Bottom -->
+  <div id="footerbottom">
+    <div class="footerwrap">
+      <!-- Start Copyright Div -->
+      <div id="copyright">&copy;2015.Venol - Theme by Cyber 2015</div>
+      <!-- PLEASE SUPPORT US BY LEAVING THIS LINK -->
+      <!-- End Copyright Div -->
+      <!-- Start Social area -->
+      <div class="socialfooter">
+        <ul>
+          <li><a href="https://www.facebook.com/veterinary.olympiad" class="social-facebook"></a></li>
+          <li><a href="https://twitter.com/venol2015_ua" class="social-twitter"></a></li>
+        </ul>
+      </div>
+      <!-- End Socialarea -->
+    </div>
+  </div>
+  <!-- End Footer Bottom -->
+</div>
+<!-- End Footer -->
+<!-- Start Scroll To Top Div -->
+<div id="scrolltab"></div>
+<!-- End Scroll To Top Div -->
+</html>
